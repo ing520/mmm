@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/category.css">
+
+</head>
+
+<body>
+    <!--头部  -->
+    <!-- @@include ./template/header.html -->
+    <!-- 搜索 -->
+    <!-- @@include ./template/search.html -->
+
+    <!-- 列表 -->
+    <div class="list">
+        <ul>
+            <!-- <li class="list-t">
+                <a href="" class="list-tit"><i></i>大家电</a>
+                <ul>
+                    <li>
+                        <a href="">电视</a>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+<!-- 底部 -->
+<!-- @@include ./template/footer.html -->
+    <script type="text/html" id="tmp1">
+        {{each result v i}}
+        <li  class="list-tit">
+            <a href="javascript:;" data-id={{v.titleId}}><i></i>{{v.title}}</a>
+            <ul class="list_two clearfix">
+            </ul>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="tmp2">
+        
+              {{each result v i}}
+              <li>
+                    <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a>
+                </li>
+              {{/each}}
+           
+    </script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/category.js"></script>
+</body>
+
+</html>

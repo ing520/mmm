@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/productlist.css">
+</head>
+
+<body>
+    <!-- @@include ./template/header.html -->
+    <!-- @@include ./template/search.html -->
+    <!-- 路径导航 -->
+    <section class="nav">
+        <!-- <a href="index.html">首页></a>
+        <a>全部分类> ></a>
+        <a class="two">电视</a>
+        <a class="select fr">筛选</a> -->
+    </section>
+    <!-- 楼层区 -->
+    <section class="floor">
+        <ul>
+            <li>
+                <a href="" class="clearfix">
+                    <div class="pic fl">
+                        <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视">
+                    </div>
+                    <div class="info fl">
+                        <div class="tit">乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</div>
+                        <p><em>￥1999.00</em></p>
+                        <div class="other">
+                            <em>报价(6)</em>
+                            <em>评论(2286)</em>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- 页码 -->
+    <div class="page clearfix">
+        <span class="fl">
+            <a href="" id="prev">上一页</a>
+        </span>
+        <span class="fr">
+            <a href="" id="next">下一页</a>
+        </span>
+            <select name="select" id="select">
+                
+            </select>
+      
+
+    </div>
+    <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+    <script type="text/html" id="tmp1">
+        <a href="index.html">首页></a>
+        <a>全部分类> ></a>
+        <a class="two">{{result.category}}</a>
+        <a class="select fr">筛选</a>
+    </script>
+    <script type="text/html" id="tmp2">
+        {{each list v i}}
+        <li>
+            <a href="bijia.html?productId={{v.productId}}&category={{v.categoryId}}&">
+                    <div class="pic fl">
+                        <img src="{{v.productImg.src}}" alt="{{v.alt}}">
+                    </div>
+                    <div class="info fl">
+                        <div class="tit">{{v.productName}}</div>
+                        <p><em>{{v.productPrice}}</em></p>
+                        <div class="other">
+                            <em>{{v.productQuote}}</em>
+                            <em>{{v.productCom}}</em>
+                        </div>
+                    </div>
+                </a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 页码 -->
+    <!-- <script type="text/html" id="tmp3">
+                        <%
+                        count=count/10
+                        %>
+                        <%
+                        count%10==0?count:count+1%>
+                    <option value="1">第1页</option>
+                        <%for(let i=2;i<=count;i++){%>
+                    <option value="{{i}}">第{{i}}页</option>
+                        <%}%>
+    </script> -->
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/productlist.js"></script>
+</body>
+
+</html>

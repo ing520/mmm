@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+<body>
+    <!-- @@include ./template/header2.html -->
+      <!-- 超值折扣推荐 -->
+      <section class="discount">
+        
+        <div class="main">
+            <ul>
+                <li class="clearfix">
+                    <div class="floor_left fl">
+                        <a href="">
+                            <img src="http://img10.360buyimg.com/n1/g13/M08/03/19/rBEhVFHUCF0IAAAAAAE6WA-oszMAAAvVQFF8CgAATpw626.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="floor_right">
+                        <div class="r_top">
+                            移动端凑单品：海天 鲜味 生抽 1.28L
+                            <span>10.9元元</span>
+                        </div>
+                        <div class="r_bottom">
+                            <span>
+                                京东商城 | 10-25 14:10
+                            </span>
+                            <span><i></i>
+                                有1人评论</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="more_bar">
+            <a href="">
+                更多优惠信息>>
+            </a>
+        </div>
+    </section>
+    <!-- 分页 -->
+    <!-- @@include ./template/footer.html -->
+    <script type="text/html" id="tmp2">
+        {{each result v i}}
+        <li class="clearfix">
+            <div class="floor_left fl">
+                <a href="moneyproduct.html?productid={{v.productId}}">
+                    <img src="{{v.productImgLg.src}}"
+                        alt="">
+                </a>
+            </div>
+            <div class="floor_right">
+                <div class="r_top">
+                    {{v.productName}}
+                    <span>{{v.productPinkage}}</span>
+                </div>
+                <div class="r_bottom clearfix">
+                    <span class="fl">
+                        {{v.productFrom}} | {{v.productTime}}
+                    </span>
+                    <span class="fr"><i></i>
+                       {{v.productComCount}}</span>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/moneyctrl.js"></script>
+</body>
+</html>

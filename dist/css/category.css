@@ -1,0 +1,44 @@
+.list ul {
+  background: #ededed;
+}
+.list ul .list-tit {
+  border: 1px solid #ccc;
+  line-height: 0.8rem;
+  text-indent: 0.72rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+.list ul .list-tit a {
+  display: block;
+  color: black;
+  font-size: 0.32rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+.list ul .list-tit a i {
+  float: right;
+  background: url("http://www.zuyushop.com/wap/images/arrow1.gif") no-repeat;
+  width: 0.44rem;
+  height: 0.44rem;
+  display: block;
+  margin-top: 0.22rem;
+}
+.list ul .list-tit ul {
+  background-color: #f9f9f9;
+  display: none;
+}
+.list ul .list-tit ul.content {
+  display: block;
+}
+.list ul .list-tit ul li {
+  width: 33.33%;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 0.8rem;
+  float: left;
+}
+.list ul .list-tit ul li a {
+  font-weight: 400;
+  border-right: 1px solid #ccc;
+}

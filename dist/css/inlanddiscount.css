@@ -1,0 +1,38 @@
+.product {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.product li {
+  padding-top: 0.48rem;
+  width: 50%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.product li a .img {
+  height: 2.92rem;
+}
+.product li a .img img {
+  width: 3.04rem;
+  height: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+.product li a .content {
+  height: 2.16rem;
+  padding-left: 0.4rem;
+  text-align: left;
+}
+.product li a .content p:first-child {
+  margin-top: 0.16rem;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+.product li a .content p:nth-child(2) {
+  color: #ff6c00;
+  margin-top: 4px;
+  -webkit-line-clamp: 1;
+}
+.product li a .content p:last-child {
+  margin-top: 0.4rem;
+}

@@ -1,0 +1,21 @@
+.main {
+  background-color: #fff;
+}
+.main .link {
+  margin: 0.2rem auto;
+  width: 5rem;
+  font-size: 0.32rem;
+}
+.main .link a {
+  background-color: #F4F4F4;
+  border: 1px solid #bfbfbf;
+  padding: 0.1rem;
+  display: inline-block;
+  height: 0.86rem;
+  line-height: 0.86rem;
+  color: black;
+}
+.main .link a img {
+  width: 0.32rem;
+  height: 0.32rem;
+}

@@ -1,0 +1,77 @@
+.nav {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+  font-size: 0.28rem;
+  padding-top: 0.06rem;
+}
+.nav a {
+  color: black;
+}
+.nav a:first-child {
+  padding-left: 0.1rem;
+}
+.nav a:last-child {
+  text-align: center;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+  width: 1.28rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding: 0 0.32rem;
+  box-shadow: 0 1px 2px #888;
+  border-radius: 0.1rem;
+  margin-right: 0.2rem;
+}
+.floor ul li {
+  background-color: #fff;
+  height: 4.36rem;
+  border-bottom: 1px solid #ccc;
+  padding-top: 0.52rem;
+}
+.floor ul li a {
+  display: block;
+}
+.floor ul li a .pic {
+  width: 2.4rem;
+  height: 2.34rem;
+}
+.floor ul li a .pic img {
+  width: 2.4rem;
+  height: 2.34rem;
+}
+.floor ul li a .info {
+  margin-left: 0.1rem;
+  padding-top: 0.3rem;
+}
+.floor ul li a .info .tit {
+  color: #333;
+  font-size: 0.28rem;
+  padding-bottom: 0.36rem;
+}
+.floor ul li a .info p {
+  color: #ea3900;
+  font-size: 0.36rem;
+}
+.page {
+  height: 0.92rem;
+}
+.page span {
+  text-align: center;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+  height: 0.64rem;
+  line-height: 0.64rem;
+  padding: 0 0.32rem;
+  box-shadow: 0 1px 2px #888;
+  border-radius: 0.1rem;
+  margin-right: 0.2rem;
+  display: block;
+  margin: 0.16rem 1.6rem;
+}
+.page span a {
+  color: black;
+}
+.page select {
+  display: block;
+  margin-top: 0.32rem;
+  margin-left: 50%;
+}

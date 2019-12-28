@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+</head>
+<body>
+      <!-- 头部 -->
+      <!-- @@include ./template/header1.html -->
+      <!-- 商品展示 -->
+      <ul class="product clearfix">
+          <!-- <li>
+              <a href="discount.html">
+                  <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                <div class="content">
+                    <p>西域美农新疆特产五星和田红枣250g*2</p>
+                    <p>19.8元(5件99元)</p>
+                    <p>京东商城</p>
+                </div>
+              </a>
+          </li> -->
+      </ul>
+      <!-- 尾部 -->
+      <!-- @@include ./template/footer.html -->
+      <script type="text/html" id="tmp1">
+        {{each result v i}}
+        <li>
+            <div class="img">
+            <a href="discount.html?productid={{v.productId}}">
+            </div>
+            <div class="img">
+                <img src="{{v.productImg.src}}" alt="{{v.productImg.alt}}">
+                </div>
+              <div class="content">
+                  <p>{{v.productName}}</p>
+                  <p>{{v.productPrice}}</p>
+                  <p>{{v.productFrom}}</p>
+              </div>
+            </a>
+        </li>
+        {{/each}}
+      </script>
+        <script src="./lib/jquery-3.3.1.js"></script>
+        <script src="./js/rem.js"></script>
+        <script src="./lib/template-web.js"></script>
+        <script src="./js//inlanddiscount.js"></script>
+</body>
+</html>

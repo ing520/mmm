@@ -1,0 +1,87 @@
+.nav .ul {
+  background-color: #fff;
+  width: 94%;
+  border-bottom: 1px solid #dadada;
+}
+.nav .ul li {
+  text-align: center;
+  width: 33%;
+  font-size: 0.32rem;
+  float: left;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.nav .ul li a {
+  color: black;
+}
+.nav .ul li:last-child {
+  border-right: 1px solid #dadada;
+}
+.nav .search {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+}
+.nav .hide,
+.nav .hide2,
+.nav .hide3 {
+  display: none;
+  padding-top: 0.88rem;
+  background-color: #fff;
+}
+.nav .hide .info,
+.nav .hide2 .info,
+.nav .hide3 .info {
+  border-bottom: 1px solid #dadada;
+  font-size: 0.32rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 100%;
+}
+.nav .arise {
+  display: block;
+}
+.content ul li {
+  background-color: #fff;
+  margin: 0.2rem;
+  float: left;
+  width: 47%;
+  text-align: center;
+}
+.content ul li a {
+  display: inline-block;
+}
+.content ul li a img {
+  width: 3.48rem;
+  height: 3.48rem;
+}
+.content ul li a p {
+  color: #333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 6px;
+}
+.content ul li a .con_b {
+  margin-top: 10px;
+}
+.content ul li a .con_b span {
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+}
+.content ul li a .con_b .buy {
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 3px;
+  background-color: #ff9501;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+}

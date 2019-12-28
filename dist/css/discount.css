@@ -1,0 +1,80 @@
+.main {
+  background-color: #fff;
+}
+.main .one {
+  margin-left: 0.2rem;
+}
+.main .one h1 {
+  font-size: 0.36rem;
+  font-weight: 800;
+  color: #5a5a5a;
+  margin: 0 auto 0.1rem;
+  padding-top: 0.2rem;
+}
+.main .one .one_tit span {
+  margin: 0.24rem auto;
+  color: #999;
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+}
+.main .one .one_m p {
+  margin: 0.12rem auto;
+  line-height: 0.48rem;
+  font-size: 0.32rem;
+  text-align: left;
+}
+.main .one .one_m img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.main .one .one_buy {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  margin: 0.4rem 0.2rem;
+  border-radius: 0.2rem;
+  background-color: #FF9000;
+}
+.main .one .one_buy a {
+  display: block;
+  font-size: 0.28rem;
+  color: white;
+}
+.main .two {
+  text-align: center;
+}
+.main .three p {
+  margin: 0.2rem;
+  text-align: left;
+  font-size: 0.32rem;
+  color: black;
+}
+.main .three .form {
+  border: 2px solid #ECEAE8;
+  border-radius: 0.04rem;
+  margin: 0 auto;
+  width: 96%;
+}
+.main .three .form .comment {
+  height: 0.72rem;
+  background-color: #fbfbfb;
+  border-top: solid 1px #f2f2f2;
+}
+.main .three .form .comment input {
+  text-align: center;
+  font-size: 0.32rem;
+  color: white;
+  background-color: #ff841d;
+  border: 1px solid #ff841d;
+  height: 0.72rem;
+  line-height: 0.72rem;
+}
+.main .three .time .left .l img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0.4rem;
+  border-radius: 50%;
+}
+.main .three .time .left .r p:first-child {
+  color: #5997c0;
+}

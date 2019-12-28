@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+    
+</head>
+<body>
+    <!-- @@include ./template/header4.html -->
+    <!-- 导航 -->
+
+    <div class="nav clearfix">
+        <ul>
+           
+           
+        </ul>
+        <div class="search">
+
+        </div>
+    </div>
+    <!-- 详情区 -->
+    <div class="info">
+            <ul>
+                <li class="clearfix">
+                    <div class="info_l">
+                        <a href="http://s.click.taobao.com/lkqGHQx">
+                            <img src="http://seller.manmanbuy.com/ProPic/2016100009230957088.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info_r">
+                       <div class="info_t">
+                        <p>[包邮]双十一红包 今日开启</p>
+                        <p>¥0.0<del>0</del></p>
+                       </div>
+                       <div class="info_b">
+                           <i>
+                               <em></em>
+                               <span>1%</span>
+                           </i>
+                           <b>已领82张</b>
+                           <div class="killmoney">
+                            <div>
+                                <div class="bar clearfix">
+                                    <a href="https://shop.m.taobao.com/shop/coupon.htm?&amp;sellerId=2139300603&amp;activityId=0218b79d11a8445c8446b538de36de23" class="goquan" target="_blank">点击领10元优惠券</a>
+                                    <a href="">下单链接</a>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    <script type="text/html" id="tmp1">
+      {{each result v i}}
+      <li data-id={{v.titleId}}>
+            <a>{{v.title}}</a>
+      </li>
+      {{/each}}
+    </script>
+    <script type="text/html" id="tmp2">
+    {{each result v i}}
+    <li class="clearfix">
+            <div class="info_l">
+                <a href="http://s.click.taobao.com/lkqGHQx">
+                    <img src="{{v.productImg}}" alt="">
+                </a>
+            </div>
+            <div class="info_r">
+               <div class="info_t">
+                <p>[包邮]双十一红包 今日开启</p>
+                <p>{{v.productPrice.split(".")[0]+"."+v.productPrice.split(".")[1].split("")[0]}}<del>{{v.productPrice.split(".")[1].replace(v.productPrice.split(".")[1].split("")[0],"")}}</del></p>
+               </div>
+               <div class="info_b">
+                   <i>
+                       <em style="width:{{v.productCouponRemain.split("已")[0]}}"></em>
+                       <span>{{v.productCouponRemain.split("已")[0]}}</span>
+                   </i>
+                   <b>{{v.productCouponRemain.split("已领")[1]}}</b>
+                   <div class="killmoney">
+                    <div>
+                        <div class="bar clearfix">
+                            <a href="{{v.productCoupon.src}}" class="goquan" target="_blank">{{v.productCoupon.val}}</a>
+                            <a href="">下单链接</a>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+            </div>
+        </li> 
+    {{/each}}
+    </script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/baicaijia.js"></script>
+</body>
+</html>
+
+

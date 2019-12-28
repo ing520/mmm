@@ -1,0 +1,42 @@
+.nav {
+  height: 0.76rem;
+  background-color: #eeeeee;
+  color: black;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
+  line-height: 0.76rem;
+  margin-left: 0.2rem;
+  font-size: 0.28rem;
+}
+.banner {
+  height: 0.8rem;
+  color: #874604;
+  line-height: 0.8rem;
+  border: 1px solid #ccc;
+  background-color: #eeeeee;
+  font-size: 0.28rem;
+  font-weight: 700;
+  text-indent: 0.2rem;
+  margin-top: 0.2rem;
+}
+.banner ul {
+  background-color: #fff;
+}
+.banner ul li {
+  border-bottom: 1px solid #e7e7e7;
+}
+.banner ul li a .banner_l em {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: red;
+  color: white;
+  line-height: 0.4rem;
+  text-align: left;
+}
+.banner ul li a .banner_r {
+  font-weight: 400;
+}
+.banner ul li a .banner_r p:nth-child(1) {
+  color: black;
+}

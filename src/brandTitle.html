@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/brandTitle.css">
+</head>
+
+<body>
+<!-- @@include ./template/header.html -->
+<!-- @@include ./template/search.html -->
+<!-- 路径导航 -->
+<div class="nav">
+    <span>首页>全部分类></span>
+</div>
+<!-- 热门品牌排行 -->
+<div class="banner">
+    <p>热门品牌排行</p>
+    <ul>
+        <li>
+            <a href="" class="clearfix">
+               <span class="fl"> 平板电视十大品牌</span>
+               <i class="fr "></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="text/html" id="tmp1">
+{{each result v i}}
+<li>
+    <a href="brand.html?brandtitleid={{v.brandTitleId}}&category={{v.categoryId}}%20class=" class="clearfix" data-brand="{{v.brandTitleId}}" data-category="{{v.categoryId}}">
+       <span class="fl"> {{v.brandTitle}}</span>
+       <i class="fr "></i>
+    </a>
+</li>
+{{/each}}
+</script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/brandTitle.js"></script>
+</body>
+
+</html>

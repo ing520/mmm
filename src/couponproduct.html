@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+</head>
+<body>
+    <!-- @@include ./template/header5.html-->
+    <!-- 详情 -->
+    <p>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+    <div class="info">
+        <ul>
+            <li class="clearfix">
+                <div class="info_l fl">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <div class="info_r fl">
+                    <p>必胜客以单品价点购任意饮料免费续杯一次</p>
+                    <p>有效期至2017年01月06日</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- @@include ./template/footer.html -->
+    <script type="text/html" id="tmp">
+    {{each result v i}}
+    <li class="clearfix">
+        <div class="info_l fl">
+            <a href="" data-id="{{v.couponProductId}}">
+                <img src="{{v.couponProductImg.src}}" alt="{{v.couponProductImg.alt}}">
+            </a>
+        </div>
+        <div class="info_r fl">
+            <p>{{v.couponProductName}}</p>
+            <p>{{v.couponProductTime}}</p>
+        </div>
+    </li>
+    {{/each}}
+    </script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/couponproduct.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+    <!-- @@include ./template/header5.html -->
+    <div class="nav">
+        <ul class="clearfix">
+            <li><a href="./couponproduct.html?couponid=0&amp;name=肯德基">
+                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+                    <p>肯德基</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- @@include ./template/footer.html -->
+    <script type="text/html" id="tmp">
+    {{each result v i}}
+    <li><a href="couponproduct.html?couponid={{v.couponId}}&name={{v.couponTitle}}">
+        <img src="{{v.couponImg}}" alt="">
+        <p>{{v.couponTitle}}</p>
+    </a>
+</li>
+    {{/each}}
+    </script>
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/coupon.js"></script>
+</body>
+
+</html>

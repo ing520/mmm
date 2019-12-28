@@ -1,0 +1,31 @@
+p {
+  text-align: center;
+  color: #999;
+}
+.info ul li {
+  border-bottom: 1px solid #999;
+  height: 2.58rem;
+  margin-top: 0.4rem;
+}
+.info ul li .info_l a {
+  height: 2rem;
+  display: inline-block;
+}
+.info ul li .info_l a img {
+  width: 2rem;
+  height: 1.34rem;
+}
+.info ul li .info_r {
+  margin: 0.28rem;
+}
+.info ul li .info_r p:nth-child(1) {
+  width: 12.2rem;
+  color: #333;
+  white-space: pre-wrap;
+}
+.info ul li .info_r p:nth-child(2) {
+  text-align: left;
+  font-size: 12px;
+  color: #E70;
+  margin-top: 10px;
+}
